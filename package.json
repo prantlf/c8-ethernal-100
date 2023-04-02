@@ -1,0 +1,43 @@
+{
+  "name": "c8-ethernal-100",
+  "private": true,
+  "description": "Demonstrates how all coverage stats computed by c8 remain 100 if excludeAfterRemap is set to true.",
+  "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantlf.tk/)",
+  "keywords": [
+    "c8",
+    "coverage",
+    "bug"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prantlf/c8-ethernal-100.git"
+  },
+  "homepage": "https://github.com/prantlf/c8-ethernal-100#readme",
+  "bugs": "https://github.com/prantlf/c8-ethernal-100/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.17"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "prepare": "node data/prepare"
+  },
+  "c8": {
+    "exclude": [
+      "src/codejar",
+      "src/prism"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "checkCoverage": true,
+    "branches": 100,
+    "functions": 100,
+    "lines": 100,
+    "statements": 100
+  },
+  "devDependencies": {
+    "c8": "7.13.0"
+  }
+}
