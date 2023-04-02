@@ -65,7 +65,7 @@ The text code coverage produced using [Puppeteer Coverage API] is saved in `data
 
 The [original project] can be used to demonstrate the problem too:
 
-    git clone https://github.com/prantlf/graphviz-webcomponent
+    git clone https://github.com/prantlf/graphviz-webcomponent.git
     cd graphviz-webcomponent
     git checkout c8-ethernal-100-coverage
     npm i -g pnpm
